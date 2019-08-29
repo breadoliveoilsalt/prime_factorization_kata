@@ -14,6 +14,11 @@ RSpec.describe PrimeFactors do
 		it "should factor 2" do 
 			expect(PrimeFactors.of(2)).to eq([2])
 		end
+	
+		it "should factor 3" do 
+			expect(PrimeFactors.of(3)).to eq([3])
+		end
+
 	end
 end 
 
