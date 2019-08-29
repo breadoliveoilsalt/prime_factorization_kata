@@ -2,15 +2,13 @@ class PrimeFactors
 
 	def self.of(n)
 		factors = []
-		if n % 2 == 0 
-			factors << 2
-			n /= 2
+		divisor = 1
+		while n > 1 && divisor += 1
+			while n % divisor == 0 
+				factors << divisor
+				n/=divisor
+			end
 		end
-
-		if n > 1
-			factors << n
-		end
-		
 		factors
 	end
 
