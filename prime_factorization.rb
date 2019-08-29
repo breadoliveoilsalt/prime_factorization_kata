@@ -9,6 +9,7 @@ class PrimeFactors
 				factors << divisor
 				n/=divisor
 			end
+			divisor = n-1 if divisor > Math.sqrt(n)
 		end
 		factors
 	end
