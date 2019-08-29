@@ -16,7 +16,10 @@ RSpec.describe PrimeFactors do
 			[6, [2,3]],
 			[7, [7]],
 			[8, [2,2,2]],
-			[9, [3,3]]
+			[9, [3,3]],
+			[2*3*5*7*13, [2,3,5,7,13]],
+			[8191*131071, [8191, 131071]],
+			[2**100, [2]*100]
 		].each do |number, factors|
 			it "should factor #{number}" do
 				expect(PrimeFactors.of(number)).to eq(factors)
