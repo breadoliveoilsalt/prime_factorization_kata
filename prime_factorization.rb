@@ -6,4 +6,4 @@ class Beginning
 
 end
 
-Beginning.new.check_it_out
+
