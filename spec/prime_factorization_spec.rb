@@ -7,18 +7,15 @@ RSpec.describe PrimeFactors do
   end
 
 	describe "PrimeFactors.of" do 
-		it "should factor 1" do
-			expect(PrimeFactors.of(1)).to eq([])
+		[
+			[1, [ ]],
+			[2, [2]],
+			[3, [3]]
+		].each do |number, factors|
+			it "should factor #{number}" do
+				expect(PrimeFactors.of(number)).to eq(factors)
+			end
 		end
-
-		it "should factor 2" do 
-			expect(PrimeFactors.of(2)).to eq([2])
-		end
-	
-		it "should factor 3" do 
-			expect(PrimeFactors.of(3)).to eq([3])
-		end
-
 	end
 end 
 
