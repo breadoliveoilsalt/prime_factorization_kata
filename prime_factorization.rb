@@ -4,10 +4,13 @@ class PrimeFactors
 		factors = []
 		if n % 2 == 0 
 			factors << 2
-			factors << 2 if n > 2
-		elsif n == 3
+			n /= 2
+		end
+
+		if n > 1
 			factors << n
 		end
+		
 		factors
 	end
 
