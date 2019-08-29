@@ -1,8 +1,8 @@
-class Beginning
+class PrimeFactors
 
-  def check_it_out
-    puts "Hey, check it out!"
-  end
+	def of(n)
+
+	end
 
 end
 
