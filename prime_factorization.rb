@@ -1,7 +1,7 @@
 class PrimeFactors
 
-	def of(n)
-
+	def self.of(n)
+		[]
 	end
 
 end

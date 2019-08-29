@@ -7,7 +7,13 @@ RSpec.describe PrimeFactors do
   end
 
 	describe "PrimeFactors.of" do 
-		expect(PrimeFactors.of(1)).to equal([1])	
+		it "should factor 1" do
+			expect(PrimeFactors.of(1)).to eq([])
+		end
+
+		it "should factor 2" do 
+			expect(PrimeFactors.of(2)).to eq([2])
+		end
 	end
 end 
 
